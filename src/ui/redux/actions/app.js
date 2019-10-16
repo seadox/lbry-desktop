@@ -493,3 +493,5 @@ export function doSyncWithPreferences() {
     });
   };
 }
+
+export function doDesktopWalletEncrypt() {}

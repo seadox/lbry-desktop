@@ -820,5 +820,10 @@
   "Content may be hidden on this %type% because of your %settings%.": "Content may be hidden on this %type% because of your %settings%.",
   "Sync": "Sync",
   "earned and bound in tips": "earned and bound in tips",
-  "currently staked": "currently staked"
+  "currently staked": "currently staked",
+  "Sync your balance and preferences accross devices.": "Sync your balance and preferences accross devices.",
+  "Sync balance and preferences across devices.": "Sync balance and preferences across devices.",
+  "By continuing, I agree to the %terms% and confirm I am over the age of 13.": "By continuing, I agree to the %terms% and confirm I am over the age of 13.",
+  "An email address is required to sync your account.": "An email address is required to sync your account.",
+  "Advanced Editor": "Advanced Editor"
 }

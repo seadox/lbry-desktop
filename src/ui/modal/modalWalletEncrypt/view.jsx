@@ -3,7 +3,8 @@ import React from 'react';
 import { Form, FormField, Submit } from 'component/common/form';
 import { Modal } from 'modal/modal';
 import Button from 'component/button';
-import { setSavedPassword } from 'util/saved-passwords';
+import { setSavedPassword, getSavedPassword } from 'util/saved-passwords';
+import { Lbry } from 'lbry-redux';
 
 type Props = {
   closeModal: () => void,
@@ -72,16 +73,17 @@ class ModalWalletEncrypt extends React.PureComponent<Props, State> {
   }
 
   submitEncryptForm() {
-    const { state } = this;
+    const { encryptWallet, getSync, syncEnabled, changeSyncPassword } = this.props;
+    const { newPassword, rememberPassword, newPasswordConfirm, understandConfirmed } = this.state;
 
     let invalidEntries = false;
 
-    if (state.newPassword !== state.newPasswordConfirm) {
+    if (newPassword !== newPasswordConfirm) {
       this.setState({ passwordMismatch: true });
       invalidEntries = true;
     }
 
-    if (state.understandConfirmed === false) {
+    if (understandConfirmed === false) {
       this.setState({ understandError: true });
       invalidEntries = true;
     }
@@ -89,11 +91,22 @@ class ModalWalletEncrypt extends React.PureComponent<Props, State> {
     if (invalidEntries === true) {
       return;
     }
-    if (state.rememberPassword === true) {
-      setSavedPassword(state.newPassword);
-    }
+
     this.setState({ submitted: true });
-    this.props.encryptWallet(state.newPassword);
+
+    getSavedPassword().then(oldPassword => {
+      if (syncEnabled) {
+        return changeSyncPassword(oldPassword, newPassword)
+          .then(() => encryptWallet(newPassword))
+          .then(() => getSync(newPassword))
+          .then(() => setSavedPassword(newPassword, rememberPassword));
+      } else {
+        encryptWallet(newPassword);
+        if (rememberPassword === true) {
+          setSavedPassword(newPassword, rememberPassword);
+        }
+      }
+    });
   }
 
   render() {

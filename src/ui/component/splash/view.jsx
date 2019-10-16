@@ -130,13 +130,9 @@ export default class SplashScreen extends React.PureComponent<Props, State> {
           if (launchedModal === false && !modal) {
             this.setState({ launchedModal: true }, () => notifyUnlockWallet());
           }
-
-          // If we cleared the error timeout due to a wallet being locked, make sure to start it back up
-          if (!this.timeout) {
-            this.adjustErrorTimeout();
-          }
         } else {
           Lbry.resolve({ urls: 'lbry://one' }).then(() => {
+            clearTimeout(this.timeout);
             this.setState({ isRunning: true }, () => this.continueAppLaunch());
           });
         }
