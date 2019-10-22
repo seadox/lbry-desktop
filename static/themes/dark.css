@@ -1,34 +1,72 @@
+/* #2c3237 - 5% */
+/* #383f45 - 10% */
+/* #434b53;  - 15% */
+/* #4e5862;  - 20% */
+/* #5a6570;  - 25% */
+
 [theme='dark'] {
   --color-background: #212529;
+  --color-background-overlay: #21252980;
+
   --color-text: #eeeeee;
-  /* #2c3237 - 5% */
-  /* #383f45 - 10% */
-  /* #434b53;  - 15% */
-  /* #4e5862;  - 20% */
-  /* #5a6570;  - 25% */
+  --color-text-error: var(--lbry-red-1);
+  --color-text-empty: #bbbbbb;
+  --color-text-help: #bbbbbb;
+  --color-text-subtitle: #9bacbf;
+  --color-text-warning: #212529;
+  --color-text-warning--background: var(--lbry-yellow-1);
+
+  /* Generic */
+  --color-box-shadow: #212529;
+  --color-placeholder-background: #4e5862;
+
+  /* Header */
   --color-header-background: #434b53;
+
+  /* Card */
   --color-card-background: #2c3237;
   --color-card-actions: #383f45;
-  --color-box-shadow: #212529;
 
+  /* Loading/Empty */
+  --color-spinner-light: #5a6570;
+  --color-spinner-dark: #212529;
+
+  /* Lists */
   --color-list-border: #4e5862;
 
-  --color-subtitle: #9bacbf;
-
+  /* Input */
   --color-input-color: #eeeeee;
+  --color-input-placeholder: var(--lbry-gray-1);
   --color-input-background: #5a6570;
+  --color-input-background-copyable: #434b53;
+  --color-input-border: var(--lbry-gray-5);
+  --color-input-border-active: var(--lbry-teal-3);
 
+  /* Button */
   --color-button-background: var(--lbry-teal-4);
   --color-link: var(--lbry-teal-4);
   --color-link-hover: var(--lbry-teal-3);
   --color-link-active: var(--lbry-teal-2);
   --color-link-icon: #5a6570;
 
+  /* Menu */
   --color-menu-background: #434b53;
   --color-menu-background--selected: #2c3237;
   --color-menu-background--active: #4e5862;
 
-  --color-tag-background: #5a67748c;
+  /* Tags */
+  --color-tag-background: #5866749e;
+  --color-tag-mature-background: #b394c6db;
   --color-tag-action: var(--lbry-teal-3);
-  --color-tag-border: #33584a;
+  --color-tag-border: #586674;
+
+  /* Content */
+  --color-file-viewer-background: #212529;
+
+  /* Tabs */
+  --color-tabs-background: #383f45;
+
+  /* Search */
+  --color-search-suggestion: #212529;
+  --color-search-suggestion-background: #cce6fb;
 }

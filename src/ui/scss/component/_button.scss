@@ -68,13 +68,7 @@
 }
 
 .button--link {
-  [theme='dark'] & {
-    color: $lbry-teal-4;
-
-    &:hover {
-      color: $lbry-teal-3;
-    }
-  }
+  color: var(--color-link);
 }
 
 .button--uri-indicator {
@@ -92,18 +86,6 @@
   .markdown-preview & {
     height: initial;
     vertical-align: initial;
-    color: $lbry-teal-5;
-
-    &:hover {
-      color: $lbry-teal-3;
-    }
-
-    [theme='dark'] & {
-      color: $lbry-teal-4;
-      &:hover {
-        color: $lbry-teal-3;
-      }
-    }
   }
 }
 

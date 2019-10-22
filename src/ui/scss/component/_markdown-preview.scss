@@ -85,11 +85,6 @@
     border-radius: 0.2rem;
     font-size: var(--font-label);
     padding: calc(var(--spacing-miniscule) - 4px) var(--spacing-miniscule);
-
-    [theme='dark'] & {
-      color: darken($lbry-white, 10%);
-      background-color: rgba($lbry-gray-4, 0.25);
-    }
   }
 
   a,

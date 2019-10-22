@@ -256,7 +256,7 @@ class HelpPage extends React.PureComponent<Props, State> {
                   {!this.state.accessTokenHidden && accessToken && (
                     <div>
                       <p>{accessToken}</p>
-                      <div className="alert-text">
+                      <div className="help--warning">
                         {__('This is equivalent to a password. Do not post or share this.')}
                       </div>
                     </div>

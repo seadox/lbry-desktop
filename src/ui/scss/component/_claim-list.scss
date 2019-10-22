@@ -99,7 +99,7 @@
   }
 }
 
-.claim-preview--channel {
+.claim-preview--channel:not(.claim-preview--inline) {
   background-color: var(--color-card-actions);
 }
 
@@ -168,7 +168,7 @@
   align-items: flex-end;
   flex: 1;
   font-size: var(--font-subtext);
-  color: var(--color-subtitle);
+  color: var(--color-text-subtitle);
 }
 
 .claim-upload {

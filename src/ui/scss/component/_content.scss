@@ -95,12 +95,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   margin: auto;
-
   background-color: $lbry-white;
-  [theme='dark'] & {
-    background-color: $lbry-black;
-    color: $lbry-white;
-  }
 
   &:-webkit-full-screen {
     width: 100%;

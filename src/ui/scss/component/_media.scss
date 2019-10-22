@@ -11,10 +11,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    [theme='dark'] & {
-      background-color: var(--dm-color-04);
-    }
   }
 }
 
@@ -108,7 +104,7 @@
 
 .media__subtitle {
   align-self: flex-start;
-  color: var(--color-subtitle);
+  color: var(--color-text-subtitle);
 }
 
 .media__subtitle--large {
@@ -129,19 +125,11 @@
 
 .media__info {
   word-wrap: break-word;
-
-  [theme='dark'] & {
-    border-color: rgba($lbry-gray-5, 0.2);
-  }
 }
 
 .media__info--large {
   margin-top: var(--spacing-medium);
   font-size: var(--font-body);
-
-  [theme='dark'] & {
-    border-color: rgba($lbry-gray-5, 0.2);
-  }
 }
 
 .media__info-text {

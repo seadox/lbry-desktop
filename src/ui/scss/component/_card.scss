@@ -114,29 +114,6 @@
   border-color: $lbry-green-3;
 }
 
-.card__subtitle {
-  margin: var(--spacing-small) 0;
-  padding: var(--spacing-small);
-  border-radius: var(--card-radius);
-  font-size: var(--font-body);
-  background-color: rgba($lbry-blue-1, 0.1);
-  color: darken($lbry-gray-5, 15%);
-
-  [theme='dark'] & {
-    background-color: var(--dm-color-04);
-    color: inherit;
-  }
-}
-
-.card__subtitle--status {
-  @extend .card__subtitle;
-  background-color: $lbry-yellow-1;
-
-  [theme='dark'] & {
-    background-color: rgba($lbry-yellow-1, 0.1);
-  }
-}
-
 .card__title {
   display: flex;
   align-items: center;

@@ -5,17 +5,12 @@
 .tabs__list {
   display: flex;
   align-items: center;
-  background-color: $lbry-black;
-  color: $lbry-white;
+  background-color: var(--color-tabs-background);
   padding: var(--spacing-medium) var(--spacing-main-padding);
 
   & > *:not(.tab) {
     // If there is anything after the tabs, render it on the opposite side of the page
     margin-left: auto;
-  }
-
-  [theme='dark'] & {
-    background-color: darken($lbry-black, 5%);
   }
 }
 

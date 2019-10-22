@@ -276,7 +276,7 @@ export default class SplashScreen extends React.PureComponent<Props, State> {
         />
         {error && (
           <div className="splash__error card card--section">
-            <p className="card__subtitle">
+            <p className="section__subtitle">
               {__('Uh oh. The flux in our Retro Encabulator must be out of whack. Try refreshing to fix it.')}
             </p>
             <div className="card__actions--center">

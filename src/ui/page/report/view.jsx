@@ -48,7 +48,7 @@ class ReportPage extends React.Component {
       <Page>
         <section className="card card--section">
           <h2 className="card__title">{__('Report an Issue/Request a Feature')}</h2>
-          <p className="card__subtitle">
+          <p className="section__subtitle">
             {__(
               'Please describe the problem you experienced or the feature you want to see and any information you think might be useful to us. Links to screenshots are great!'
             )}

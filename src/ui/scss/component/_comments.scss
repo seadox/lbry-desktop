@@ -11,11 +11,7 @@
   padding: var(--spacing-small) 0;
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid var(--lbry-gray-1);
-
-    [theme='dark'] & {
-      border-color: rgba($lbry-gray-5, 0.2);
-    }
+    border-bottom: 1px solid var(--color-list-border);
   }
 }
 

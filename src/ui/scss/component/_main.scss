@@ -1,9 +1,5 @@
 .main-wrapper {
   position: relative;
-
-  [theme='dark'] & {
-    background-color: var(--dm-color-08);
-  }
 }
 
 .main-wrapper--mac {
@@ -86,21 +82,4 @@
 
 .main--full-width {
   width: 100%;
-}
-
-.main__status {
-  @extend .card__subtitle;
-  display: flex;
-  justify-content: space-between;
-  background-color: $lbry-teal-4;
-  color: $lbry-white;
-
-  svg {
-    stroke: $lbry-white;
-  }
-
-  [theme='dark'] & {
-    background-color: $lbry-teal-5;
-    color: $lbry-white;
-  }
 }

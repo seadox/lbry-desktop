@@ -57,7 +57,15 @@
 }
 
 .section__subtitle {
-  color: var(--color-subtitle);
+  margin: var(--spacing-small) 0;
+  border-radius: var(--card-radius);
+  font-size: var(--font-body);
+  color: var(--color-text-subtitle);
+}
+
+.section__subtitle--status {
+  @extend .section__subtitle;
+  background-color: var(--color-text-warning);
 }
 
 .section__divider {

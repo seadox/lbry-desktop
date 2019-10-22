@@ -52,7 +52,7 @@ function PublishPage(props: Props) {
           />
           <section className="card card--section">
             <h1 className="card__title">{__('LBRY Credits Required')}</h1>
-            <p className="card__subtitle">
+            <p className="section__subtitle">
               {__(' There are a variety of ways to get credits, including more than')}{' '}
               <CreditAmount inheritStyle amount={totalRewardRounded} />{' '}
               {__('in free rewards for participating in the LBRY beta.')}

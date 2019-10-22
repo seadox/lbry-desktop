@@ -98,7 +98,6 @@ label {
 blockquote {
   margin-bottom: 1rem;
   padding: 0.8rem;
-
   background-color: rgba($lbry-cyan-1, 0.1);
   border-left: 0.5rem solid $lbry-cyan-5;
 }
@@ -112,11 +111,7 @@ code {
 hr {
   width: 100%;
   height: 1px;
-  background-color: $lbry-gray-1;
-
-  [theme='dark'] & {
-    background-color: var(--dm-color-04);
-  }
+  background-color: var(--color-list-border);
 }
 
 img,
@@ -191,15 +186,6 @@ a {
   }
 }
 
-.alert-text {
-  color: $lbry-red-3;
-  font-weight: 600;
-
-  [theme='dark'] & {
-    color: $lbry-red-1;
-  }
-}
-
 .card {
   .help:last-child {
     margin-bottom: 0;
@@ -209,29 +195,18 @@ a {
 .help {
   display: block;
   font-size: var(--font-label);
-  color: lighten($lbry-gray-5, 10%);
+  color: var(--color-text-help);
   margin-top: var(--spacing-small);
-
-  [theme='dark'] & {
-    color: $lbry-gray-5;
-  }
 }
 
 .help--warning {
-  background-color: $lbry-yellow-1;
-
-  [theme='dark'] & {
-    color: $lbry-black;
-  }
+  background-color: var(--color-text-warning--background);
+  color: var(--color-text-warning);
 }
 
 .empty {
-  color: $lbry-gray-5;
+  color: var(--color-text-empty);
   font-style: italic;
-
-  [theme='dark'] & {
-    color: inherit;
-  }
 }
 
 .qr-code {
@@ -249,11 +224,7 @@ a {
 }
 
 .error-text {
-  color: $lbry-red-5;
-
-  [theme='dark'] & {
-    color: $lbry-red-3;
-  }
+  color: var(--color-text-error);
 }
 
 .thumbnail-preview {
@@ -263,17 +234,4 @@ a {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-fieldset,
-.fieldset {
-  [theme='dark'] & {
-    border-top-color: var(--dm-color-04);
-  }
-}
-
-legend {
-  [theme='dark'] & {
-    border-color: transparent;
-  }
 }

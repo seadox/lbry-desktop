@@ -101,7 +101,7 @@ function ChannelForm(props: Props) {
   // TODO clear and bail after submit
   return (
     <section className={'card--section'}>
-      <div className="card__subtitle">
+      <div className="section__subtitle">
         <p>{__('We can explain...')}</p>
         <p>
           {__(

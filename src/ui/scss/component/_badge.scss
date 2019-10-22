@@ -9,6 +9,7 @@
   @extend .badge;
   background-color: var(--color-tag-background);
   color: var(--color-link);
+  border: 1px solid var(--color-tag-border);
 
   svg {
     stroke: var(--color-tag-action);
@@ -22,10 +23,6 @@
 }
 
 .badge--mature {
-  background-color: lighten($lbry-grape-1, 10%);
-  color: $lbry-black;
-
-  svg {
-    stroke: $lbry-black;
-  }
+  @extend .badge--tag;
+  background-color: var(--color-tag-mature-backgroun);
 }

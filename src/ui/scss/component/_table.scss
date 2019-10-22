@@ -5,20 +5,26 @@ table,
   background-color: transparent;
   margin: var(--spacing-small) 0;
 
-  [theme='dark'] & {
-    th {
-      border-bottom: 2px solid $lbry-white;
-    }
+  th {
+    border-bottom: 2px solid var(--color-list-border);
   }
 
   th,
   td {
     padding-left: var(--spacing-large);
   }
-}
 
-td {
-  overflow: hidden;
+  td {
+    overflow: hidden;
+  }
+
+  tr {
+    &:not(:last-of-type) {
+      td {
+        border-bottom: 1px solid var(--color-list-border);
+      }
+    }
+  }
 }
 
 .table__header {

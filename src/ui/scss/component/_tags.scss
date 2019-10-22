@@ -83,15 +83,4 @@ $main: $lbry-teal-5;
 
 .tag--mature {
   @extend .badge--mature;
-  // Lighten the color a little so it doesn't stand out as much on claim previews
-}
-
-.tag__action-label {
-  margin-left: 0.5rem;
-  padding-left: 0.5rem;
-  padding-top: 0.7rem;
-
-  [theme='dark'] & {
-    border-color: rgba($lbry-white, 0.1);
-  }
 }

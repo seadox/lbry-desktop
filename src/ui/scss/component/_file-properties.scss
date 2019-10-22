@@ -5,11 +5,7 @@
   font-size: var(--font-label);
 
   .icon {
-    stroke: rgba($lbry-black, 0.5);
-
-    [theme='dark'] & {
-      stroke: rgba($lbry-white, 0.7);
-    }
+    stroke: var(--color-text-subtitle);
   }
 
   & > *:not(:last-child) {

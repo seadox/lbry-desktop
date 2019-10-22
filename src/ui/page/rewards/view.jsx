@@ -41,7 +41,7 @@ class RewardsPage extends PureComponent<Props> {
           !IS_WEB && (
             <section className="card card--section">
               <h2 className="card__title">{__('Sign In To Unlock Rewards')}</h2>
-              <p className="card__subtitle">
+              <p className="section__subtitle">
                 {__(
                   'This is optional. You can continue to use this app without rewards, but LBC may be needed for some tasks.'
                 )}
@@ -100,7 +100,7 @@ class RewardsPage extends PureComponent<Props> {
       return (
         <section className="card card--section">
           <h2 className="card__title">{__('Disabled')}</h2>
-          <p className="card__subtitle">
+          <p className="section__subtitle">
             {__('Rewards are currently disabled for your account. Turn on diagnostic data sharing, in')}{' '}
             <Button button="link" navigate="/$/settings" label="Settings" />
             {__(', in order to re-enable them.')}

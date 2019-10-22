@@ -19,6 +19,7 @@ function Comment(props: Props) {
     <li className="comment">
       <div className="comment__meta">
         <Button
+          button={author ? 'link' : undefined}
           className="button--uri-indicator truncated-text comment__author"
           navigate={authorUri}
           label={author || __('Anonymous')}

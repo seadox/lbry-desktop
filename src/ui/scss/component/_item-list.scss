@@ -3,10 +3,6 @@
   margin-bottom: var(--spacing-large);
   padding: var(--spacing-large);
 
-  [theme='dark'] & {
-    background-color: rgba($lbry-white, 0.1);
-  }
-
   .card__actions {
     margin-top: var(--spacing-medium);
     margin-left: var(--spacing-small);
@@ -36,8 +32,4 @@
 .item-list__row:hover,
 .item-list__row--selected {
   background-color: rgba($lbry-black, 0.1);
-
-  [theme='dark'] & {
-    background-color: rgba($lbry-black, 0.5);
-  }
 }
