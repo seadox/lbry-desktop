@@ -1,7 +1,7 @@
 .main-wrapper {
   position: relative;
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     background-color: var(--dm-color-08);
   }
 }
@@ -99,7 +99,7 @@
     stroke: $lbry-white;
   }
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     background-color: $lbry-teal-5;
     color: $lbry-white;
   }

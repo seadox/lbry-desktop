@@ -5,7 +5,7 @@ table,
   background-color: transparent;
   margin: var(--spacing-small) 0;
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     th {
       border-bottom: 2px solid $lbry-white;
     }

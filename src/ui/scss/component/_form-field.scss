@@ -45,7 +45,7 @@ textarea {
     opacity: 0.4;
   }
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     &::placeholder {
       color: $lbry-white;
     }
@@ -57,7 +57,7 @@ checkbox-element input[type='checkbox']:checked + label,
 checkbox-element input[type='checkbox'] + label {
   color: lighten($lbry-black, 20%);
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     color: $lbry-gray-1;
   }
 }
@@ -70,13 +70,8 @@ fieldset-section {
   textarea {
     border-color: lighten($lbry-black, 20%);
     border-radius: var(--input-border-radius);
-    background-color: $lbry-white;
+    background-color: var(--color-input-background);
     border-width: 1px;
-
-    [data-mode='dark'] & {
-      background-color: var(--dm-color-03);
-      border-color: $lbry-black;
-    }
   }
 
   label {
@@ -84,7 +79,7 @@ fieldset-section {
     text-transform: none;
     color: lighten($lbry-black, 20%);
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       color: $lbry-gray-3;
     }
   }
@@ -121,7 +116,7 @@ radio-element {
     margin-left: var(--spacing-miniscule);
     font-size: var(--font-body);
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       color: $lbry-gray-1;
 
       &:hover {
@@ -210,7 +205,7 @@ fieldset-group {
         color: $lbry-gray-4;
         background-color: $lbry-white;
 
-        [data-mode='dark'] & {
+        [theme='dark'] & {
           background-color: var(--dm-color-03);
           border-color: var(--dm-color-02);
         }
@@ -231,7 +226,7 @@ fieldset-group {
           border-image-source: linear-gradient(to right, $lbry-black, $lbry-teal-5 5%);
         }
 
-        [data-mode='dark'] & {
+        [theme='dark'] & {
           &:focus {
             border-image-source: linear-gradient(to right, var(--dm-color-02), $lbry-teal-5 5%);
           }
@@ -271,7 +266,7 @@ fieldset-section {
 
     input[type='email'],
     input[type='text'] {
-      [data-mode='dark'] & {
+      [theme='dark'] & {
         &:not(:focus) {
           border-color: $lbry-gray-5;
         }
@@ -287,7 +282,7 @@ fieldset-section {
       border-color: $lbry-black;
       opacity: 1;
 
-      [data-mode='dark'] & {
+      [theme='dark'] & {
         border-color: $lbry-gray-5;
         color: $lbry-white;
       }
@@ -299,14 +294,14 @@ fieldset-section {
     background-position: 95% center;
     background-size: 1.2rem;
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       option {
-        background-color: $lbry-gray-5;
+        background-color: var(--color-input-background);
       }
     }
   }
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     input,
     textarea,
     select {
@@ -330,7 +325,7 @@ fieldset-section {
   user-select: text;
   cursor: default;
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     background-color: rgba($lbry-white, 0.3);
     border-color: $lbry-gray-5;
     color: inherit;

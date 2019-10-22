@@ -3,7 +3,7 @@
   background-color: $lbry-gray-1;
   border-radius: var(--card-radius);
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     background-color: var(--dm-color-04);
   }
 }

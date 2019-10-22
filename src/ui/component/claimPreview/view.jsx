@@ -184,6 +184,7 @@ const ClaimPreview = forwardRef<any, {}>((props: Props, ref: any) => {
         'claim-preview--large': type === 'large',
         'claim-preview--inline': type === 'inline',
         'claim-preview--tooltip': type === 'tooltip',
+        'claim-preview--channel': isChannel,
         'claim-preview--visited': !isChannel && !claimIsMine && hasVisitedUri,
         'claim-preview--pending': pending,
       })}

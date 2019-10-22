@@ -21,7 +21,7 @@
     z-index: 1;
     stroke: $lbry-gray-5;
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       stroke: $lbry-gray-3;
     }
   }
@@ -42,7 +42,7 @@
   background-color: lighten($lbry-blue-1, 15%);
   color: $lbry-black;
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     background-color: $lbry-blue-4;
     color: inherit;
   }
@@ -57,7 +57,8 @@
   text-overflow: ellipsis;
   height: var(--input-height);
   border-radius: var(--input-height);
-  background-color: $lbry-gray-1;
+  background-color: var(--color-input-background);
+  color: var(--color-input-color);
   border: none;
   padding-right: var(--spacing-small);
 
@@ -67,32 +68,12 @@
   &:focus {
     border-radius: var(--input-border-radius);
   }
-
-  &::placeholder {
-    color: $lbry-black;
-    opacity: 0.9;
-  }
-
-  [data-mode='dark'] & {
-    background-color: var(--dm-color-03);
-    color: $lbry-white;
-
-    &::placeholder {
-      color: var(--dm-color-01);
-    }
-  }
 }
 
 .wunderbar__menu {
-  background-color: $lbry-white;
-  box-shadow: 0 1px 5px rgba($lbry-black, 0.15);
   min-width: 100%;
   overflow: hidden;
-
-  [data-mode='dark'] & {
-    background-color: $lbry-gray-5;
-    color: $lbry-white;
-  }
+  background-color: var(--color-input-background);
 }
 
 .wunderbar__suggestion {

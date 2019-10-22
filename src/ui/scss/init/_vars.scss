@@ -1,3 +1,28 @@
+// Color
+[theme='light'] {
+  // Color
+  --color-background: #f7f7f7;
+  --color-text: #111111;
+  --color-header-background: #ffffff;
+  --color-bard-background: #ffffff;
+  --color-box-shadow: #e2e5e9;
+  --color-background--splash: #270f34;
+  --color-card-actions: #f7fbfe;
+  --color-card-actions--dark: #545454;
+
+  --color-menu-background: #eeeeee;
+
+  // Dark Mode
+  --dm-color-01: #ddd;
+  --dm-color-02: #90908f;
+  --dm-color-03: #6a6a6a;
+  --dm-color-04: #555254;
+  --dm-color-05: #353434;
+  --dm-color-06: #2e2d2e;
+  --dm-color-07: #252424;
+  --dm-color-08: #1e1e1e;
+}
+
 // Both of these should probably die and become variables as well
 $spacing-vertical: 2rem;
 $spacing-width: 36px;
@@ -37,22 +62,6 @@ $large-breakpoint: 1921px;
   --font-title: 1.6em;
   --font-section-title: 2rem;
   --font-heading: 3rem;
-
-  // Color
-  --color-background: #f7f7f7;
-  --color-background--splash: #270f34;
-  --color-card-actions: #f7fbfe;
-  --color-card-actions--dark: #545454;
-
-  // Dark Mode
-  --dm-color-01: #ddd;
-  --dm-color-02: #90908f;
-  --dm-color-03: #6a6a6a;
-  --dm-color-04: #555254;
-  --dm-color-05: #353434;
-  --dm-color-06: #2e2d2e;
-  --dm-color-07: #252424;
-  --dm-color-08: #1e1e1e;
 
   // Text
   --text-max-width: 660px;

@@ -1,9 +1,6 @@
-$border-color: rgba($lbry-teal-5, 0.1);
-$border-color--dark: var(--dm-color-04);
-
 .claim-list {
   .claim-preview {
-    border-top: 1px solid $border-color;
+    border-bottom: 1px solid var(--color-list-border);
   }
 }
 
@@ -13,6 +10,8 @@ $border-color--dark: var(--dm-color-04);
   min-height: 4.5rem;
   padding: var(--spacing-medium);
   font-size: var(--font-body);
+  border-bottom: 1px solid var(--color-list-border);
+
   border-top-left-radius: var(--card-radius);
   border-top-right-radius: var(--card-radius);
   background-color: var(--color-card-actions);
@@ -25,11 +24,6 @@ $border-color--dark: var(--dm-color-04);
     margin-top: 0;
     margin-bottom: 0;
   }
-
-  [data-mode='dark'] & {
-    color: var(--dm-color-01);
-    background-color: var(--color-card-actions--dark);
-  }
 }
 
 .claim-list__header--small {
@@ -41,10 +35,6 @@ $border-color--dark: var(--dm-color-04);
   margin-bottom: 0;
   padding: 0 var(--spacing-medium);
   padding-right: var(--spacing-large);
-
-  [data-mode='dark'] & {
-    color: var(--dm-color-01);
-  }
 }
 
 .claim-list__alt-controls {
@@ -73,11 +63,6 @@ $border-color--dark: var(--dm-color-04);
     flex-shrink: 0;
     margin-right: var(--spacing-medium);
   }
-
-  [data-mode='dark'] & {
-    color: $lbry-white;
-    border-color: $border-color--dark;
-  }
 }
 
 .claim-preview--large {
@@ -98,10 +83,6 @@ $border-color--dark: var(--dm-color-04);
     width: 7.5rem;
     height: 7.5rem;
   }
-
-  [data-mode='dark'] & {
-    border: none;
-  }
 }
 
 .claim-preview--small {
@@ -118,14 +99,14 @@ $border-color--dark: var(--dm-color-04);
   }
 }
 
+.claim-preview--channel {
+  background-color: var(--color-card-actions);
+}
+
 .claim-preview--visited {
   // Still keep the normal styles on hover regardless of if they have visited the claim
   &:not(:hover) {
     color: lighten($lbry-black, 35%);
-
-    [data-mode='dark'] & {
-      color: darken($lbry-white, 35%);
-    }
   }
 }
 
@@ -135,10 +116,6 @@ $border-color--dark: var(--dm-color-04);
 
   &:hover {
     background-color: $lbry-white;
-
-    [data-mode='dark'] & {
-      background-color: lighten($lbry-black, 5%);
-    }
   }
 }
 
@@ -150,12 +127,6 @@ $border-color--dark: var(--dm-color-04);
   .channel-thumbnail {
     width: var(--channel-thumbnail-width--small);
     height: var(--channel-thumbnail-width--small);
-  }
-}
-
-.claim-preview--tooltip {
-  [data-mode='dark'] & {
-    background-color: $lbry-black;
   }
 }
 
@@ -197,6 +168,7 @@ $border-color--dark: var(--dm-color-04);
   align-items: flex-end;
   flex: 1;
   font-size: var(--font-subtext);
+  color: var(--color-subtitle);
 }
 
 .claim-upload {

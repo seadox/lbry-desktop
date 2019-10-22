@@ -97,7 +97,7 @@
   margin: auto;
 
   background-color: $lbry-white;
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     background-color: $lbry-black;
     color: $lbry-white;
   }

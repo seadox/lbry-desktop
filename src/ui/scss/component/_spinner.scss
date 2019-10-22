@@ -42,7 +42,7 @@
   .rect {
     background-color: $lbry-white;
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       background-color: var(--dm-color-01);
     }
   }

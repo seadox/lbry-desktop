@@ -55,41 +55,18 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: lighten($lbry-black, 20%);
+  color: var(--color-link);
   margin-top: var(--spacing-small);
 
   .icon {
-    stroke: $lbry-gray-5;
+    stroke: var(--color-link-icon);
   }
 
-  &:hover {
-    color: $lbry-teal-4;
-    .icon {
-      color: $lbry-teal-4;
-    }
-  }
-
+  &:hover,
   &.navigation-link--active {
-    color: $lbry-teal-5;
+    color: var(--color-link-active);
     .icon {
-      color: $lbry-teal-4;
-    }
-  }
-
-  [data-mode='dark'] & {
-    color: darken($lbry-white, 30%);
-
-    svg {
-      stroke: darken($lbry-white, 30%);
-    }
-
-    &:hover,
-    &.navigation-link--active {
-      color: $lbry-teal-4;
-
-      .icon {
-        stroke: $lbry-teal-4;
-      }
+      stroke: var(--color-link-active);
     }
   }
 }

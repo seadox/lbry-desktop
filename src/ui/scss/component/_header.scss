@@ -3,19 +3,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: $lbry-white;
-  border-bottom: 1px solid $lbry-gray-1;
-  box-shadow: var(--card-box-shadow) $lbry-gray-1;
+  background-color: var(--color-header-background);
+  box-shadow: var(--card-box-shadow) var(--color-box-shadow);
   font-size: var(--font-body);
   -webkit-user-select: none;
   -webkit-app-region: drag;
-
-  [data-mode='dark'] & {
-    background-color: var(--dm-color-05);
-    color: var(--dm-color-01);
-    border-bottom: none;
-    box-shadow: var(--card-box-shadow) $lbry-black;
-  }
 
   & > * {
     user-select: none;
@@ -80,70 +72,18 @@
   justify-content: center;
   align-items: center;
   border-radius: 0;
-
-  &:hover {
-    color: $lbry-teal-5;
-
-    svg {
-      stroke: $lbry-teal-5;
-    }
-  }
-
-  &.header__navigation-item--active {
-    &::after {
-      height: 0.2em;
-      bottom: 0;
-      width: 100%;
-      background-color: $lbry-teal-5;
-      content: '';
-      position: absolute;
-
-      [data-mode='dark'] & {
-        background-color: $lbry-teal-3;
-      }
-    }
-  }
-
-  [data-mode='dark'] & {
-    &:hover {
-      color: $lbry-teal-3;
-
-      svg {
-        stroke: $lbry-teal-3;
-      }
-    }
-
-    svg {
-      stroke: var(--dm-color-01);
-    }
-  }
-}
-.header__banner-background {
-  display: flex;
-  background-color: $lbry-teal-4;
-  [data-mode='dark'] & {
-    background-color: $lbry-teal-5;
-    color: $lbry-white;
-  }
-}
-
-.header__banner-contents {
-  display: flex;
-  max-width: var(--page-max-width);
-  width: 100%;
-  margin: auto;
-  padding: 0 var(--spacing-large);
-  justify-content: space-between;
-  background-color: $lbry-teal-4;
-  color: $lbry-white;
+  color: var(--color-link);
 
   svg {
-    stroke: $lbry-white;
+    stroke: var(--color-link);
   }
 
-  [data-mode='dark'] & {
-    background-color: $lbry-teal-5;
-    color: $lbry-white;
+  &:hover {
+    color: var(--color-link-hover);
+
+    svg {
+      stroke: var(--color-link-hover);
+    }
   }
 }
 
@@ -166,13 +106,6 @@
   align-self: flex-end;
   margin-left: auto;
   padding: 0 var(--spacing-small);
-}
-
-.header__navigation-item--upgrade {
-  color: $lbry-teal-5;
-  svg {
-    stroke: $lbry-teal-5;
-  }
 }
 
 @media (max-width: 600px) {

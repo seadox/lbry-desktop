@@ -86,7 +86,7 @@
     font-size: var(--font-label);
     padding: calc(var(--spacing-miniscule) - 4px) var(--spacing-miniscule);
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       color: darken($lbry-white, 10%);
       background-color: rgba($lbry-gray-4, 0.25);
     }

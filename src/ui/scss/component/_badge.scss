@@ -7,15 +7,11 @@
 
 .badge--tag {
   @extend .badge;
-  background-color: lighten($lbry-teal-5, 55%);
-  color: darken($lbry-teal-5, 20%);
-  svg {
-    stroke: $lbry-teal-5;
-  }
+  background-color: var(--color-tag-background);
+  color: var(--color-link);
 
-  [data-mode='dark'] & {
-    color: var(--dm-color-01);
-    background-color: lighten(mix($lbry-black, $lbry-teal-5, 80%), 10%);
+  svg {
+    stroke: var(--color-tag-action);
   }
 }
 
@@ -31,9 +27,5 @@
 
   svg {
     stroke: $lbry-black;
-  }
-
-  [data-mode='dark'] & {
-    background-color: darken(mix($lbry-grape-1, $lbry-gray-5, 50%), 20%);
   }
 }

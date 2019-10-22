@@ -7,7 +7,7 @@
   .icon {
     stroke: rgba($lbry-black, 0.5);
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       stroke: rgba($lbry-white, 0.7);
     }
   }

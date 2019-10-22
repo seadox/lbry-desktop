@@ -2,7 +2,7 @@
   margin-bottom: var(--spacing-medium);
   padding-bottom: var(--spacing-medium);
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     border-color: var(--dm-color-04);
   }
 }
@@ -28,7 +28,7 @@
     content: '';
     position: absolute;
 
-    [data-mode='dark'] & {
+    [theme='dark'] & {
       background-image: linear-gradient(to bottom, transparent 0%, var(--dm-color-08) 90%);
     }
   }

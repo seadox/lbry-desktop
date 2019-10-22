@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>LBRY</title>
+    <link rel="stylesheet" type="text/css" href="themes/dark.css" />
   </head>
 
   <body>
@@ -10,7 +11,7 @@
     <script>
       window.i18n_messages = {};
 
-      function loadUi () {
+      function loadUi() {
         const script = document.createElement('script');
         script.setAttribute('src', 'ui.js');
         document.body.appendChild(script);
@@ -24,9 +25,12 @@
       }
       if (lang && lang != 'en') {
         fetch('https://lbry.com/i18n/get/lbry-desktop/app-strings/' + lang + '.json')
-                .then(r => r.json())
-                .then(j => { window.i18n_messages[lang] = j; loadUi(); })
-                .catch(loadUi);
+          .then(r => r.json())
+          .then(j => {
+            window.i18n_messages[lang] = j;
+            loadUi();
+          })
+          .catch(loadUi);
       } else {
         loadUi();
       }

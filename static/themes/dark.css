@@ -1,0 +1,34 @@
+[theme='dark'] {
+  --color-background: #212529;
+  --color-text: #eeeeee;
+  /* #2c3237 - 5% */
+  /* #383f45 - 10% */
+  /* #434b53;  - 15% */
+  /* #4e5862;  - 20% */
+  /* #5a6570;  - 25% */
+  --color-header-background: #434b53;
+  --color-card-background: #2c3237;
+  --color-card-actions: #383f45;
+  --color-box-shadow: #212529;
+
+  --color-list-border: #4e5862;
+
+  --color-subtitle: #9bacbf;
+
+  --color-input-color: #eeeeee;
+  --color-input-background: #5a6570;
+
+  --color-button-background: var(--lbry-teal-4);
+  --color-link: var(--lbry-teal-4);
+  --color-link-hover: var(--lbry-teal-3);
+  --color-link-active: var(--lbry-teal-2);
+  --color-link-icon: #5a6570;
+
+  --color-menu-background: #434b53;
+  --color-menu-background--selected: #2c3237;
+  --color-menu-background--active: #4e5862;
+
+  --color-tag-background: #5a67748c;
+  --color-tag-action: var(--lbry-teal-3);
+  --color-tag-border: #33584a;
+}

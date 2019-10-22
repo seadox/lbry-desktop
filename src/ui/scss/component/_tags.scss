@@ -42,15 +42,10 @@ $main: $lbry-teal-5;
     @extend .tag--remove;
     height: auto;
     padding: calc(var(--spacing-miniscule) - 1px) var(--spacing-small);
-    background-color: mix($lbry-teal-1, $lbry-white, 10%);
+    background-color: var(--color-input-background);
     border: 1px dashed;
-    border-color: lighten($lbry-teal-5, 10%);
+    border-color: var(--color-input-border);
     margin-top: -2px; // To handle the border height
-
-    [data-mode='dark'] & {
-      background-color: var(--dm-color-03);
-      border-color: $lbry-gray-4;
-    }
   }
 }
 
@@ -86,18 +81,6 @@ $main: $lbry-teal-5;
   font-size: var(--font-body);
 }
 
-.tag--add {
-  background-color: $lbry-teal-5;
-  color: $lbry-white;
-  .icon {
-    stroke: $lbry-white;
-  }
-
-  &.tag--mature {
-    @extend .badge--mature;
-  }
-}
-
 .tag--mature {
   @extend .badge--mature;
   // Lighten the color a little so it doesn't stand out as much on claim previews
@@ -108,7 +91,7 @@ $main: $lbry-teal-5;
   padding-left: 0.5rem;
   padding-top: 0.7rem;
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     border-color: rgba($lbry-white, 0.1);
   }
 }

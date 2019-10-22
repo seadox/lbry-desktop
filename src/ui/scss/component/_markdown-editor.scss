@@ -22,7 +22,7 @@
     text-decoration-style: dotted;
   }
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     border-left: 1px solid rgba($lbry-white, 0.2);
     border-right: 1px solid rgba($lbry-white, 0.2);
     border-bottom: 1px solid rgba($lbry-white, 0.2);
@@ -93,7 +93,7 @@
     border: none;
   }
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     background-color: rgba($lbry-white, 0.2);
 
     button {
@@ -126,7 +126,7 @@
   font-size: var(--font-label);
   // padding: var(--spacing-medium) 0; // overriding styles from elsewhere
 
-  [data-mode='dark'] & {
+  [theme='dark'] & {
     color: inherit;
   }
 }
