@@ -477,6 +477,11 @@ class SettingsPage extends React.PureComponent<Props, State> {
                       onChange={() => this.onAutomaticDarkModeChange(!automaticDarkModeEnabled)}
                       checked={automaticDarkModeEnabled}
                       label={__('Automatic dark mode')}
+                      helper={
+                        <I18nMessage tokens={{ link: <Button button="link" label={__('Upload custom CSS file')} /> }}>
+                          Want to add your own theme? %link%.
+                        </I18nMessage>
+                      }
                     />
                     {automaticDarkModeEnabled && (
                       <fieldset-group class="fieldset-group--smushed">
