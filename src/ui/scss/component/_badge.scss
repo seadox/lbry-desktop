@@ -8,7 +8,7 @@
 .badge--tag {
   @extend .badge;
   background-color: var(--color-tag-background);
-  color: var(--color-link);
+  color: var(--color-tag);
   border: 1px solid var(--color-tag-border);
 
   svg {

@@ -8,7 +8,7 @@ $main: $lbry-teal-5;
 
   .tag {
     margin-left: 0;
-    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
     margin-right: var(--spacing-small);
   }
 }
@@ -27,6 +27,7 @@ $main: $lbry-teal-5;
   flex-direction: column;
   align-items: flex-start;
   margin: 0;
+  margin-top: var(--spacing-small);
 }
 
 .tags--selected {
@@ -35,17 +36,12 @@ $main: $lbry-teal-5;
 }
 
 .tags__input-wrapper {
-  display: flex;
-
   // Nested style needed for more specificity
   .tag__input {
     @extend .tag--remove;
     height: auto;
-    padding: calc(var(--spacing-miniscule) - 1px) var(--spacing-small);
+    padding: var(--spacing-miniscule) var(--spacing-small);
     background-color: var(--color-input-background);
-    border: 1px dashed;
-    border-color: var(--color-input-border);
-    margin-top: -2px; // To handle the border height
   }
 }
 

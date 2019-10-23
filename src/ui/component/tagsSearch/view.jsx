@@ -107,6 +107,7 @@ export default function TagsSearch(props: Props) {
   return (
     <React.Fragment>
       <Form className="tags__input-wrapper" onSubmit={handleSubmit}>
+        <p className="section__subtitle">{__('Following')}</p>
         <ul className="tags--remove">
           {tagsPassedIn.map(tag => (
             <Tag
@@ -130,6 +131,7 @@ export default function TagsSearch(props: Props) {
           </li>
         </ul>
       </Form>
+      <p className="section__subtitle">{__('Suggested')}</p>
       <ul className="tags">
         {suggestedTags.map(tag => (
           <Tag key={`suggested${tag}`} name={tag} type="add" onClick={() => handleTagClick(tag)} />

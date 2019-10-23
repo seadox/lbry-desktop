@@ -22,11 +22,11 @@ export default function FileProperties(props: Props) {
 
   return (
     <div className="file-properties">
+      <FilePrice hideFree uri={uri} />
+      <VideoDuration uri={uri} />
+      {isRewardContent && <Icon tooltip icon={icons.FEATURED} />}
       {isSubscribed && <Icon tooltip icon={icons.SUBSCRIBE} />}
       {!claimIsMine && downloaded && <Icon tooltip icon={icons.DOWNLOAD} />}
-      {isRewardContent && <Icon tooltip icon={icons.FEATURED} />}
-      <FilePrice hideFree uri={uri} />
-      <VideoDuration className="media__subtitle" uri={uri} />
     </div>
   );
 }

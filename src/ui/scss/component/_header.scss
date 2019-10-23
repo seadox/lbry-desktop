@@ -74,16 +74,21 @@
   border-radius: 0;
   color: var(--color-link);
 
-  svg {
-    stroke: var(--color-link);
-  }
-
   &:hover {
     color: var(--color-link-hover);
 
     svg {
       stroke: var(--color-link-hover);
     }
+  }
+}
+
+.header__navigation-item--back,
+.header__navigation-item--forward,
+.header__navigation-item--lbry {
+  color: var(--color-text);
+  svg {
+    stroke: var(--color-text);
   }
 }
 

@@ -65,6 +65,7 @@
 
 .section__subtitle--status {
   @extend .section__subtitle;
+  padding: var(--spacing-small);
   background-color: var(--color-text-warning);
 }
 

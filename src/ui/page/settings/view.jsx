@@ -640,9 +640,9 @@ class SettingsPage extends React.PureComponent<Props, State> {
             <Card
               title={__('Application Cache')}
               subtitle={
-                <p className="section__subtitle--status">
+                <p className="section__subtitle">
                   {__(
-                    'This will clear the application cache. Your wallet will not be affected. Currently, followed tags and blocked channels will be cleared.'
+                    'This will clear the application cache, and might fix issues you are having. Your wallet will not be affected. '
                   )}
                 </p>
               }

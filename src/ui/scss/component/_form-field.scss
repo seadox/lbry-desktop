@@ -58,6 +58,7 @@ fieldset-section {
 
   input,
   input[type='text'],
+  input[type='number'],
   input[type='email'],
   input[type='password'],
   select,
@@ -66,6 +67,10 @@ fieldset-section {
     border-radius: var(--input-border-radius);
     background-color: var(--color-input-background);
     border-width: 1px;
+
+    &:focus {
+      border-color: var(--color-input-border-active);
+    }
   }
 
   label {
@@ -252,10 +257,14 @@ fieldset-section {
     // specificity needed because of @lbry/component rules
     // @lbry/componentfixme
     .button[type='submit']:not(:hover) {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-color: var(--color-input-border);
+      border-color: var(--color-link);
       opacity: 1;
+    }
+
+    .button:hover,
+    .button:not(:hover) {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
     }
   }
 

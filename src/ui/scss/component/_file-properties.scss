@@ -3,9 +3,11 @@
   position: relative;
   align-items: center;
   font-size: var(--font-label);
+  color: var(--color-text-help);
 
   .icon {
-    stroke: var(--color-text-subtitle);
+    margin-bottom: -1px;
+    stroke: var(--color-secondary);
   }
 
   & > *:not(:last-child) {

@@ -1,0 +1,78 @@
+[theme='light'] {
+  --color-primary: var(--lbry-teal-4);
+  --color-primary-light: #ebf6f3;
+  --color-primary-variant: #e8ecff;
+  --color-secondary: var(--lbry-indigo-4);
+  --color-secondary-alt: var(--lbry-indigo-1);
+  --color-secondary-2: #a9a3aa;
+  --color-secondary-3: #acbcfd;
+  --color-secondary-light: #f8f9ff;
+  --color-secondary-dark: #272e49;
+
+  // Color
+  --color-background: #f7f7f7;
+  --color-border: #fafafa;
+  --color-background-overlay: #21252980;
+
+  --color-text: #111111;
+  --color-text-error: var(--lbry-red-1);
+  --color-text-empty: #bbbbbb;
+  --color-text-help: #838383;
+  --color-text-subtitle: #a5a8b8;
+  --color-text-warning: #212529;
+  --color-text-warning--background: var(--lbry-yellow-1);
+
+  /* Generic */
+  --color-box-shadow: #c4c4c4;
+  --color-placeholder-background: #f0f0f0;
+
+  /* Header */
+  --color-header-background: #ffffff;
+
+  /* Card */
+  --color-card-background: #ffffff;
+  --color-card-background-highlighted: var(--color-secondary-light);
+  --color-list-header: #fff;
+
+  /* Loading/Empty */
+  --color-spinner-light: #5a6570;
+  --color-spinner-dark: #212529;
+
+  /* Input */
+  --color-input-color: #111111;
+  --color-input-placeholder: #212529;
+  --color-input-background: #f2f2f2;
+  --color-input-background-copyable: #434b53;
+  --color-input-border: transparent;
+  --color-input-border-active: var(--color-secondary);
+
+  /* Button */
+  --color-button-background: var(--color-primary);
+  --color-button-background-hover: var(--lbry-teal-3);
+  --color-link: var(--color-primary);
+  --color-link-hover: var(--color-primary);
+  --color-link-active: var(--color-primary);
+  --color-link-icon: var(--lbry-gray-4);
+
+  /* Menu */
+  --color-menu-background: #434b53;
+  --color-menu-background--selected: #2c3237;
+  --color-menu-background--active: #4e5862;
+
+  /* Tags */
+  --color-tag-background: var(--color-primary-light);
+  --color-tag: var(--color-primary);
+  --tag-mature-background: #b394c6db;
+  --color-tag-action: var(--color-secondary);
+  --color-tag-border: transparent;
+
+  /* Content */
+  --color-file-viewer-background: #212529;
+
+  /* Tabs */
+  --color-tabs-background: var(--color-secondary-dark);
+
+  /* Search */
+  --color-search-suggestion: #212529;
+  --color-search-suggestion-background: #cce6fb;
+}
