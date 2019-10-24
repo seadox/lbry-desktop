@@ -166,27 +166,39 @@ function ChannelPage(props: Props) {
       <div className="card">
         <header className="channel-cover">
           <div className="channel__quick-actions">
-            {!channelIsBlocked && !channelIsBlackListed && <ShareButton uri={uri} />}
-            {!channelIsMine && (
-              <Button
-                button="alt"
-                icon={ICONS.TIP}
-                label={__('Tip')}
-                title={__('Send a tip to this creator')}
-                onClick={() => openModal(MODALS.SEND_TIP, { uri, channelIsMine, isSupport: false })}
+            <Form onSubmit={handleSearch} className="wunderbar--channel">
+              <Icon icon={ICONS.SEARCH} />
+              <FormField
+                className="wunderbar__input"
+                value={searchQuery}
+                onChange={handleInputChange}
+                type="text"
+                placeholder={__('Search')}
               />
-            )}
-            {(channelIsMine || (!channelIsMine && supportOption)) && (
-              <Button
-                button="alt"
-                icon={ICONS.SUPPORT}
-                label={__('Support')}
-                title={__('Support this creator')}
-                onClick={() => openModal(MODALS.SEND_TIP, { uri, channelIsMine, isSupport: true })}
-              />
-            )}
-            {!channelIsBlocked && (!channelIsBlackListed || isSubscribed) && <SubscribeButton uri={permanentUrl} />}
-            {!isSubscribed && <BlockButton uri={permanentUrl} />}
+            </Form>
+            <div>
+              {!channelIsBlocked && !channelIsBlackListed && <ShareButton uri={uri} />}
+              {!channelIsMine && (
+                <Button
+                  button="alt"
+                  icon={ICONS.TIP}
+                  label={__('Tip')}
+                  title={__('Send a tip to this creator')}
+                  onClick={() => openModal(MODALS.SEND_TIP, { uri, channelIsMine, isSupport: false })}
+                />
+              )}
+              {(channelIsMine || (!channelIsMine && supportOption)) && (
+                <Button
+                  button="alt"
+                  icon={ICONS.SUPPORT}
+                  label={__('Support')}
+                  title={__('Support this creator')}
+                  onClick={() => openModal(MODALS.SEND_TIP, { uri, channelIsMine, isSupport: true })}
+                />
+              )}
+              {!channelIsBlocked && (!channelIsBlackListed || isSubscribed) && <SubscribeButton uri={permanentUrl} />}
+              {!isSubscribed && <BlockButton uri={permanentUrl} />}
+            </div>
           </div>
           {!editing && cover && (
             <img
@@ -227,21 +239,6 @@ function ChannelPage(props: Props) {
             <Tab disabled={editing}>{__('Content')}</Tab>
             <Tab>{editing ? __('Editing Your Channel') : __('About')}</Tab>
             <Tab disabled={editing}>{__('Discussion')}</Tab>
-            {/* only render searchbar on content page (tab index 0 === content page) */}
-            {tabIndex === 0 ? (
-              <Form onSubmit={handleSearch} className="wunderbar--channel">
-                <Icon icon={ICONS.SEARCH} />
-                <FormField
-                  className="wunderbar__input"
-                  value={searchQuery}
-                  onChange={handleInputChange}
-                  type="text"
-                  placeholder={__('Search')}
-                />
-              </Form>
-            ) : (
-              <div />
-            )}
           </TabList>
 
           <TabPanels>

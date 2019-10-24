@@ -262,4 +262,4 @@ function AppWrapper() {
   );
 }
 
-ReactDOM.render(<AppWrapper />, document.getElementById('app'));
+ReactDOM.unstable_createRoot(document.getElementById('app')).render(<AppWrapper />);

@@ -110,8 +110,15 @@ $metadata-z-index: 1;
 
 .channel__quick-actions {
   @extend .card__actions;
+  justify-content: space-between;
   position: absolute;
   top: 0;
   right: var(--spacing-medium);
+  left: var(--spacing-medium);
+  width: calc(100% - var(--spacing-medium) * 2);
   z-index: $metadata-z-index;
+
+  div {
+    @extend .card__actions; // Fix this
+  }
 }

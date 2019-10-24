@@ -44,7 +44,7 @@ function Paginate(props: Props) {
     <Form style={totalPages <= 1 || loading ? { display: 'none' } : null} onSubmit={handlePaginateKeyUp}>
       <fieldset-group class="fieldset-group--smushed fieldgroup--paginate">
         <fieldset-section>
-          <ReactPaginate
+          {/* <ReactPaginate
             pageCount={totalPages}
             pageRangeDisplayed={2}
             previousLabel="‹"
@@ -59,7 +59,7 @@ function Paginate(props: Props) {
             forcePage={currentPage - 1}
             initialPage={currentPage - 1}
             containerClassName="pagination"
-          />
+          /> */}
         </fieldset-section>
         <FormField
           value={textValue}

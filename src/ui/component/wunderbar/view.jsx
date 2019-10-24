@@ -7,8 +7,8 @@ import classnames from 'classnames';
 import { normalizeURI, SEARCH_TYPES, isURIValid } from 'lbry-redux';
 import { withRouter } from 'react-router';
 import Icon from 'component/common/icon';
-import Autocomplete from './internal/autocomplete';
 import Tag from 'component/tag';
+import { Form } from 'component/common/form';
 
 const L_KEY_CODE = 76;
 const ESC_KEY_CODE = 27;
@@ -169,9 +169,17 @@ class WunderBar extends React.PureComponent<Props, State> {
     const { suggestions, doFocus, doBlur, searchQuery } = this.props;
 
     return (
-      <div className="wunderbar">
+      <Form onSubmit={this.handleSubmit} className="wunderbar">
         <Icon icon={ICONS.SEARCH} />
-        <Autocomplete
+        <input
+          onChange={this.handleChange}
+          ref={el => {
+            this.input = el;
+          }}
+          className="wunderbar__input"
+          placeholder={__('Enter a LBRY URL or search for videos, music, games and more')}
+        />
+        {/* <Autocomplete
           autoHighlight
           wrapperStyle={{ flex: 1, position: 'relative' }}
           value={searchQuery}
@@ -216,8 +224,8 @@ class WunderBar extends React.PureComponent<Props, State> {
               )}
             </div>
           )}
-        />
-      </div>
+        /> */}
+      </Form>
     );
   }
 }
