@@ -172,7 +172,11 @@ export class FormField extends React.PureComponent<Props> {
         input = (
           <React.Fragment>
             <fieldset-section>
-              <label htmlFor={name}>{errorMessage ? <span className="error-text">{errorMessage}</span> : label}</label>
+              {label && (
+                <label htmlFor={name}>
+                  {errorMessage ? <span className="error-text">{errorMessage}</span> : label}
+                </label>
+              )}
               {prefix && <label htmlFor={name}>{prefix}</label>}
               {inner}
             </fieldset-section>

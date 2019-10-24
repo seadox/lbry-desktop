@@ -40,7 +40,7 @@ $main: $lbry-teal-5;
   .tag__input {
     @extend .tag--remove;
     height: auto;
-    padding: var(--spacing-miniscule) var(--spacing-small);
+    padding: calc(var(--spacing-miniscule) + 1px) var(--spacing-small);
     background-color: var(--color-input-background);
   }
 }

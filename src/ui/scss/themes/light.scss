@@ -1,6 +1,8 @@
 [theme='light'] {
   --color-primary: var(--lbry-teal-4);
-  --color-primary-light: #ebf6f3;
+  // --color-primary-dark: #008769;
+  --color-primary-dark: #007e5d;
+  --color-primary-light: #e3f6f1;
   --color-primary-variant: #e8ecff;
   --color-secondary: var(--lbry-indigo-4);
   --color-secondary-alt: var(--lbry-indigo-1);
@@ -11,14 +13,14 @@
 
   // Color
   --color-background: #f7f7f7;
-  --color-border: #fafafa;
+  --color-border: #ededed;
   --color-background-overlay: #21252980;
 
   --color-text: #111111;
   --color-text-error: var(--lbry-red-1);
   --color-text-empty: #bbbbbb;
-  --color-text-help: #838383;
-  --color-text-subtitle: #a5a8b8;
+  --color-text-help: #767676;
+  --color-text-subtitle: #767676;
   --color-text-warning: #212529;
   --color-text-warning--background: var(--lbry-yellow-1);
 
@@ -49,7 +51,7 @@
   /* Button */
   --color-button-background: var(--color-primary);
   --color-button-background-hover: var(--lbry-teal-3);
-  --color-link: var(--color-primary);
+  --color-link: var(--color-primary-dark);
   --color-link-hover: var(--color-primary);
   --color-link-active: var(--color-primary);
   --color-link-icon: var(--lbry-gray-4);
@@ -61,9 +63,9 @@
 
   /* Tags */
   --color-tag-background: var(--color-primary-light);
-  --color-tag: var(--color-primary);
+  --color-tag: var(--color-primary-dark);
   --tag-mature-background: #b394c6db;
-  --color-tag-action: var(--color-secondary);
+  --color-tag-action: var(--color-primary-dark);
   --color-tag-border: transparent;
 
   /* Content */
