@@ -28,8 +28,13 @@ class ModalPublishSuccess extends React.PureComponent<Props> {
           navigate('/$/published');
           closeModal();
         }}
+<<<<<<< HEAD
         confirmButtonLabel={'View My Publishes'}
         abortButtonLabel={'Thanks!'}
+=======
+        confirmButtonLabel={__('View My Publishes')}
+        abortButtonLabel={__('Close')}
+>>>>>>> 7d35e998ecda36ad7314ae670b86156497168ece
         onAborted={() => {
           clearPublish();
           closeModal();
