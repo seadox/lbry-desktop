@@ -183,11 +183,6 @@
     flex-shrink: 0;
     margin-right: var(--spacing-medium);
   }
-
-  [data-mode='dark'] & {
-    color: $lbry-white;
-    border-color: $border-color--dark;
-  }
 }
 
 .claim-upload__progress--outer {
@@ -197,9 +192,4 @@
 .claim-upload__progress--inner {
   background: $lbry-teal-1;
   padding: var(--spacing-miniscule);
-
-  [data-mode='dark'] & {
-    background: $lbry-teal-4;
-    color: $lbry-white;
-  }
 }
