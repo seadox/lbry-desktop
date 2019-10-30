@@ -1,5 +1,5 @@
 .item-list {
-  background-color: $lbry-white;
+  background-color: black; //white;
   margin-bottom: var(--spacing-large);
   padding: var(--spacing-large);
 
@@ -31,5 +31,5 @@
 
 .item-list__row:hover,
 .item-list__row--selected {
-  background-color: rgba($lbry-black, 0.1);
+  background-color: black; //black; //black, 0.1);
 }

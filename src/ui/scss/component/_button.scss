@@ -1,9 +1,4 @@
-@import '~@lbry/components/sass/button/_index.scss';
-
 .button {
-  display: inline-block;
-  font-weight: 400;
-
   svg {
     // Buttons that don't have a label
     &:only-child {
@@ -14,63 +9,8 @@
   }
 }
 
-.button--primary {
-  &:not(:hover) {
-    background-color: var(--color-button-background);
-  }
-
-  &:hover {
-    background-color: var(--color-button-background-hover);
-  }
-
-  &:active {
-    background-color: $lbry-teal-3;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-  }
-}
-
-// Play/View button that is overlayed ontop of the video player
-.button--icon {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 2.5rem;
-  &:not(:hover) {
-    background-color: $lbry-teal-4;
-  }
-}
-
-.button--primary,
-.button--inverse {
-  height: var(--button-height);
-  border-radius: var(--button-radius);
-  font-size: var(--font-body);
-  padding-top: 0;
-  padding-bottom: 0;
-  box-sizing: border-box;
-}
-
-.button--inverse {
-  border: 1px solid var(--color-link);
-  color: var(--color-link);
-
-  &:hover {
-    color: $lbry-white;
-    background-color: $lbry-teal-4;
-    .icon {
-      stroke: $lbry-white;
-    }
-  }
-}
-
 .button--alt {
   padding: 0;
-}
-
-.button--link {
-  color: var(--color-link);
 }
 
 .button--uri-indicator {
@@ -82,7 +22,7 @@
   transition: color 0.2s;
 
   &:hover {
-    color: $lbry-teal-5;
+    color: black; //teal-5;
   }
 
   .markdown-preview & {
@@ -100,8 +40,8 @@
   border-radius: var(--card-radius);
 
   &:hover {
-    background-color: $lbry-black;
-    color: $lbry-white;
+    background-color: black; //black;
+    color: black; //white;
   }
 }
 

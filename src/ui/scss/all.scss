@@ -1,9 +1,6 @@
 @charset "utf-8";
 
-@import '~@lbry/components/sass/init/_color.scss';
-@import '~@lbry/components/sass/init/_mixins.scss';
-@import '~@lbry/components/sass/init/_variables.scss';
-@import '~@lbry/components/sass/init/_reset.scss';
+@import '@lbry/components/sass/index.scss';
 @import 'themes/light.scss';
 @import 'themes/dark.scss';
 @import 'init/vars';
@@ -11,7 +8,6 @@
 @import 'init/type';
 @import 'init/gui';
 @import 'component/animation';
-@import 'component/badge';
 @import 'component/button';
 @import 'component/card';
 @import 'component/channel';

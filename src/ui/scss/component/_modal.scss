@@ -41,9 +41,9 @@
   margin-top: var(--spacing-small);
   padding: var(--spacing-small);
 
-  background-color: $lbry-red-1;
-  border-left: 2px solid $lbry-red-5;
-  color: $lbry-red-5;
+  background-color: black; //red-1;
+  border-left: 2px solid black; //red-5;
+  color: black; //red-5;
   list-style: none;
   overflow-y: scroll;
   white-space: pre-wrap;

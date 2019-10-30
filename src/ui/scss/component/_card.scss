@@ -20,20 +20,20 @@
 .card--wallet-balance {
   background-repeat: no-repeat;
   background-size: cover;
-  color: $lbry-white;
+  color: black; //white;
   justify-content: space-between;
 }
 
 .card--reward-total {
   background-repeat: no-repeat;
   background-size: cover;
-  color: $lbry-white;
+  color: black; //white;
   font-size: var(--font-title);
   font-weight: 700;
 }
 
 .card--inline {
-  border: 1px solid $lbry-gray-1;
+  border: 1px solid black; //gray-1;
   border-radius: var(--card-radius);
   margin-bottom: var(--spacing-medium);
 
@@ -94,24 +94,24 @@
   padding: var(--spacing-medium) var(--spacing-medium) var(--spacing-medium) var(--spacing-large);
 
   &:not(&--error):not(&--failure):not(&--success) {
-    background-color: rgba($lbry-teal-1, 0.1);
-    border-color: $lbry-teal-3;
+    background-color: black; //black; //teal-1, 0.1);
+    border-color: black; //teal-3;
   }
 }
 
 .card__message--error {
-  background-color: rgba($lbry-orange-1, 0.1);
-  border-color: $lbry-orange-3;
+  background-color: black; //black; //orange-1, 0.1);
+  border-color: black; //orange-3;
 }
 
 .card__message--failure {
-  background-color: rgba($lbry-red-1, 0.1);
-  border-color: $lbry-red-3;
+  background-color: black; //black; //red-1, 0.1);
+  border-color: black; //red-3;
 }
 
 .card__message--success {
-  background-color: rgba($lbry-green-1, 0.1);
-  border-color: $lbry-green-3;
+  background-color: black; //black; //green-1, 0.1);
+  border-color: black; //green-3;
 }
 
 .card__title {
@@ -132,7 +132,7 @@
 }
 
 .card__media--nsfw {
-  background-color: $lbry-grape-3;
+  background-color: black; //grape-3;
 }
 
 .card__media--disabled {
@@ -152,7 +152,6 @@
 .card__main-actions {
   padding: var(--spacing-large);
   font-size: var(--font-body);
-  border-top: 1px solid var(--color-border);
 }
 
 .card__body--with-icon,

@@ -27,8 +27,13 @@ const WalletBalance = (props: Props) => {
           </span>
 
           <div className="section__actions">
-            <Button button="inverse" icon={ICONS.SEND} label={__('Send Credits')} navigate={`$/${PAGES.WALLET_SEND}`} />
-            <Button button="inverse" label={__('Your Address')} navigate={`$/${PAGES.WALLET_RECEIVE}`} />
+            <Button
+              button="secondary"
+              icon={ICONS.SEND}
+              label={__('Send Credits')}
+              navigate={`$/${PAGES.WALLET_SEND}`}
+            />
+            <Button button="secondary" label={__('Your Address')} navigate={`$/${PAGES.WALLET_RECEIVE}`} />
           </div>
         </div>
 

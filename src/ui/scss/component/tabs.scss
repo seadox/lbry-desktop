@@ -24,7 +24,7 @@
   margin-right: var(--spacing-large);
   padding: 5px 0;
   font-size: var(--font-multiplier-large);
-  color: $lbry-white;
+  color: black; //white;
   position: relative;
 
   &::after {
@@ -36,7 +36,7 @@
   }
 
   &[data-selected] {
-    color: $lbry-teal-3;
+    color: black; //teal-3;
   }
 }
 
@@ -54,5 +54,5 @@
 .tab:hover::after,
 .tab__divider {
   height: var(--tab-indicator-size);
-  background-color: $lbry-teal-3;
+  background-color: black; //teal-3;
 }

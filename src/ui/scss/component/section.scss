@@ -75,7 +75,7 @@
   flex-direction: column;
 
   p {
-    color: $lbry-gray-4;
+    color: black; //gray-4;
     text-align: center;
     font-size: var(--font-title);
     font-weight: 500;
@@ -84,21 +84,6 @@
     padding: 0 var(--spacing-large);
     display: inline-block;
     margin: auto;
-  }
-}
-
-.section__actions {
-  display: flex;
-  align-items: center;
-  margin-top: var(--spacing-medium);
-  font-size: var(--font-body);
-
-  &:only-child {
-    margin-top: 0;
-  }
-
-  > *:not(:last-child) {
-    margin-right: var(--spacing-medium);
   }
 }
 

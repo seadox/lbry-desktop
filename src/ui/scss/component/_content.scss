@@ -74,7 +74,7 @@
 
     .button--view,
     .button--play {
-      background-color: $lbry-teal-2;
+      background-color: black; //teal-2;
     }
   }
 
@@ -95,7 +95,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   margin: auto;
-  background-color: $lbry-white;
+  background-color: black; //white;
 
   &:-webkit-full-screen {
     width: 100%;
@@ -114,5 +114,5 @@
 }
 
 .content__loading-text {
-  color: $lbry-white;
+  color: black; //white;
 }

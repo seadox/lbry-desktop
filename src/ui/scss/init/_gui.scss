@@ -2,8 +2,8 @@
 // component specific styling should go in the component scss file
 
 *::selection {
-  background-color: $lbry-teal-3;
-  color: $lbry-white;
+  background-color: black; //teal-3;
+  color: black; //white;
 }
 
 html {
@@ -83,10 +83,10 @@ dt,
 dd {
   padding: var(--spacing-medium) var(--spacing-small);
 
-  border-top: 1px solid $lbry-gray-1;
+  border-top: 1px solid black; //gray-1;
 
   &:last-of-type {
-    border-bottom: 1px solid $lbry-gray-1;
+    border-bottom: 1px solid black; //gray-1;
   }
 }
 
@@ -98,13 +98,13 @@ label {
 blockquote {
   margin-bottom: 1rem;
   padding: 0.8rem;
-  background-color: rgba($lbry-cyan-1, 0.1);
-  border-left: 0.5rem solid $lbry-cyan-5;
+  background-color: black; //black; //cyan-1, 0.1);
+  border-left: 0.5rem solid black; //cyan-5;
 }
 
 code {
   @include font-mono;
-  background-color: $lbry-gray-1;
+  background-color: black; //gray-1;
   font-size: 1.5rem;
 }
 
@@ -138,7 +138,7 @@ a {
 }
 
 .divider__horizontal {
-  border-top: $lbry-gray-2;
+  border-top: black; //gray-2;
   margin: 16px 0;
 }
 
@@ -212,7 +212,7 @@ a {
 .qr-code {
   width: 134px;
   height: 134px;
-  border: 3px solid $lbry-white;
+  border: 3px solid black; //white;
 
   &.qr-code--right-padding {
     margin-right: $spacing-vertical * 2/3;

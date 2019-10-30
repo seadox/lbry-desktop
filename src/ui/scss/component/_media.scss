@@ -7,7 +7,7 @@
   object-fit: cover;
 
   &:not(.media__thumb--nsfw) {
-    background-color: $lbry-gray-2;
+    background-color: black; //gray-2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,8 +15,8 @@
 }
 
 .media__thumb--nsfw {
-  background-color: $lbry-grape-5;
-  background-image: linear-gradient(to bottom right, $lbry-teal-3, $lbry-grape-5 100%);
+  background-color: black; //grape-5;
+  // background-image: linear-gradient(to bottom right, black; //teal-3, black; //grape-5 100%);
 }
 
 //  M E D I A

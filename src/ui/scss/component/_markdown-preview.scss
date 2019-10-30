@@ -78,8 +78,8 @@
 
   // Inline code
   code {
-    background-color: $lbry-gray-1;
-    color: $lbry-gray-5;
+    background-color: black; //gray-1;
+    color: black; //gray-5;
     display: inline-block;
     margin: var(--spacing-miniscule);
     border-radius: 0.2rem;
@@ -104,8 +104,8 @@
   .preview-link {
     padding: 0;
     margin: 1rem 0;
-    background-color: rgba($lbry-teal-5, 0.1);
-    border-left: 0.5rem solid $lbry-teal-5;
+    background-color: black; //black; //teal-5, 0.1);
+    border-left: 0.5rem solid black; //teal-5;
     display: block;
     align-items: center;
     word-break: break-all;

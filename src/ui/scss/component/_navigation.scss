@@ -13,9 +13,9 @@
   border-radius: var(--card-radius);
   font-size: var(--font-title);
   font-weight: 600;
-  color: $lbry-white;
+  color: black; //white;
   position: relative;
-  background-color: $lbry-black;
+  background-color: black; //black;
 
   h2 {
     font-size: 2rem;

@@ -34,14 +34,14 @@ class RewardSummary extends React.Component<Props> {
           </React.Fragment>
         }
         actions={
-          <div className="section__actions">
+          <React.Fragment>
             <Button
               button="primary"
               navigate="/$/rewards"
               label={hasRewards ? __('Claim Rewards') : __('View Rewards')}
             />
             <Button button="link" label={__('Learn more')} href="https://lbry.com/faq/rewards" />.
-          </div>
+          </React.Fragment>
         }
       />
     );

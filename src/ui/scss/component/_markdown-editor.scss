@@ -9,7 +9,7 @@
   color: var(--color-input);
 
   .CodeMirror-cursor {
-    border-color: $lbry-teal-3;
+    border-color: black; //teal-3;
   }
 
   .CodeMirror-placeholder {
@@ -18,7 +18,7 @@
 
   .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
     text-decoration: underline;
-    text-decoration-color: $lbry-red-3;
+    text-decoration-color: black; //red-3;
     text-decoration-style: dotted;
   }
 }
@@ -27,7 +27,7 @@
 .CodeMirror-line::selection,
 .CodeMirror-line > span::selection,
 .CodeMirror-line > span > span::selection {
-  background-color: $lbry-teal-1;
+  background-color: black; //teal-1;
 }
 
 .editor-toolbar {
@@ -46,13 +46,13 @@
   }
 
   &.disabled-for-preview a:not(.no-disable) {
-    background-color: $lbry-gray-1;
+    background-color: black; //gray-1;
     border-color: transparent;
     opacity: 0.3;
   }
 
   &.fullscreen {
-    background-color: $lbry-gray-1;
+    background-color: black; //gray-1;
 
     &::before,
     &::after {

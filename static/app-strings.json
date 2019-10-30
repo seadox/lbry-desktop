@@ -844,5 +844,9 @@
   "help guide": "help guide",
   "If you are having issues, checkout our %help% or email us at %email%.": "If you are having issues, checkout our %help% or email us at %email%.",
   "Wrong password for %email%": "Wrong password for %email%",
-  "Suggested": "Suggested"
+  "Suggested": "Suggested",
+  "Sign In To Unlock Rewards": "Sign In To Unlock Rewards",
+  "This is optional. You can continue to use this app without rewards, but LBC may be needed for some tasks.": "This is optional. You can continue to use this app without rewards, but LBC may be needed for some tasks.",
+  "Unlock Rewards": "Unlock Rewards",
+  "Simple Editor": "Simple Editor"
 }

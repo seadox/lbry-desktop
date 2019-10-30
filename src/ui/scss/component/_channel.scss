@@ -2,11 +2,11 @@ $cover-z-index: 0;
 $metadata-z-index: 1;
 
 .channel-cover {
-  background-image: linear-gradient(to right, $lbry-indigo-4, $lbry-cyan-5 80%);
+  // background-image: linear-gradient(to right, black; //indigo-4, black; //cyan-5 80%);
   display: flex;
   align-items: flex-end;
   box-sizing: content-box;
-  color: $lbry-white;
+  color: black; //white;
   border-top-left-radius: var(--card-radius);
   border-top-right-radius: var(--card-radius);
 }
@@ -37,7 +37,7 @@ $metadata-z-index: 1;
   position: absolute;
   height: var(--channel-thumbnail-width);
   width: var(--channel-thumbnail-width);
-  box-shadow: 0px 8px 40px -3px $lbry-black;
+  box-shadow: 0px 8px 40px -3px black; //black;
   left: var(--spacing-medium);
 }
 
@@ -60,16 +60,16 @@ $metadata-z-index: 1;
 }
 
 .channel-thumbnail__default--0 {
-  background-color: $lbry-indigo-3;
+  background-color: black; //indigo-3;
 }
 .channel-thumbnail__default--1 {
-  background-color: $lbry-orange-2;
+  background-color: black; //orange-2;
 }
 .channel-thumbnail__default--2 {
-  background-color: $lbry-blue-3;
+  background-color: black; //blue-3;
 }
 .channel-thumbnail__default--3 {
-  background-color: $lbry-red-1;
+  background-color: black; //red-1;
 }
 
 .channel__primary-info {

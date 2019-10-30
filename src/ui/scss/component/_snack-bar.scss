@@ -1,9 +1,9 @@
 .snack-bar {
   bottom: 2rem;
   left: 2rem;
-  background-color: $lbry-teal-4;
+  background-color: black; //teal-4;
   border-radius: 0.5rem;
-  color: $lbry-white;
+  color: black; //white;
   padding: var(--spacing-small) var(--spacing-large) var(--spacing-small) var(--spacing-medium);
   position: fixed;
   transition: all var(--transition-duration) var(--transition-type);
@@ -14,7 +14,7 @@
   @extend .snack-bar;
   left: auto;
   right: 2rem;
-  background-color: $lbry-grape-4;
+  background-color: black; //grape-4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@
 }
 
 .snack-bar--error {
-  background-color: $lbry-red-5;
+  background-color: black; //red-5;
 }
 
 .snack-bar__action {

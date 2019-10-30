@@ -11,13 +11,13 @@
 }
 
 .splash__button {
-  border-bottom: 1px solid $lbry-white;
-  color: $lbry-white;
+  border-bottom: 1px solid black; //white;
+  color: black; //white;
   transition: none;
 
   &:hover {
-    border-bottom: 1px solid $lbry-blue-1;
-    color: $lbry-blue-1;
+    border-bottom: 1px solid black; //blue-1;
+    color: black; //blue-1;
   }
 }
 
@@ -25,7 +25,7 @@
   position: absolute;
   line-height: 1;
   font-weight: 300;
-  color: $lbry-white;
+  color: black; //white;
   margin-top: 2rem;
 }
 
@@ -34,7 +34,7 @@
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
-  color: $lbry-white;
+  color: black; //white;
   margin-top: -1rem;
 }
 
@@ -43,16 +43,16 @@
   bottom: var(--spacing-large);
   right: var(--spacing-large);
   padding: var(--spacing-medium);
-  border-color: $lbry-white;
-  color: $lbry-white;
-  background-color: rgba($lbry-white, 0.2);
+  border-color: black; //white;
+  color: black; //white;
+  background-color: black; //black; //white, 0.2);
   font-size: var(--font-label);
 
   &:hover {
-    color: $lbry-white;
-    background-color: rgba($lbry-white, 0.5);
+    color: black; //white;
+    background-color: black; //black; //white, 0.5);
     .icon {
-      stroke: $lbry-white;
+      stroke: black; //white;
     }
   }
 }
@@ -60,7 +60,7 @@
 .splash__error {
   position: absolute;
   margin-top: 20rem;
-  box-shadow: var(--card-box-shadow) $lbry-gray-5;
+  box-shadow: var(--card-box-shadow) black; //gray-5;
 }
 
 .doodle {
