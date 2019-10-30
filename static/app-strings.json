@@ -848,5 +848,9 @@
   "Sign In To Unlock Rewards": "Sign In To Unlock Rewards",
   "This is optional. You can continue to use this app without rewards, but LBC may be needed for some tasks.": "This is optional. You can continue to use this app without rewards, but LBC may be needed for some tasks.",
   "Unlock Rewards": "Unlock Rewards",
-  "Simple Editor": "Simple Editor"
+  "Simple Editor": "Simple Editor",
+  "Not a valid LBRY address": "Not a valid LBRY address",
+  "Upload custom CSS file": "Upload custom CSS file",
+  "This will clear the application cache, and might fix issues you are having. Your wallet will not be affected. ": "This will clear the application cache, and might fix issues you are having. Your wallet will not be affected. ",
+  "Want to add your own theme? %link%.": "Want to add your own theme? %link%."
 }
