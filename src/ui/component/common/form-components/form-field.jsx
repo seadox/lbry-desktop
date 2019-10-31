@@ -89,13 +89,17 @@ export class FormField extends React.PureComponent<Props> {
         input = (
           <Wrapper>
             <input id={name} type="radio" {...inputProps} />
-            <label htmlFor={name}>{label}</label>
+            <label htmlFor={name} tabIndex="1">
+              {label}
+            </label>
           </Wrapper>
         );
       } else if (type === 'checkbox') {
         input = (
           <div className="checkbox">
-            <label htmlFor={name}>{label}</label>
+            <label htmlFor={name} tabIndex="1">
+              {label}
+            </label>
             <input id={name} type="checkbox" {...inputProps} />
           </div>
         );

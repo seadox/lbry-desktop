@@ -852,5 +852,7 @@
   "Not a valid LBRY address": "Not a valid LBRY address",
   "Upload custom CSS file": "Upload custom CSS file",
   "This will clear the application cache, and might fix issues you are having. Your wallet will not be affected. ": "This will clear the application cache, and might fix issues you are having. Your wallet will not be affected. ",
-  "Want to add your own theme? %link%.": "Want to add your own theme? %link%."
+  "Want to add your own theme? %link%.": "Want to add your own theme? %link%.",
+  "This is equivalent to a password. Do not post or share this.": "This is equivalent to a password. Do not post or share this.",
+  "No results for %query%": "No results for %query%"
 }

@@ -53,7 +53,7 @@
 //  M E D I A
 //  A C T I O N S
 
-.media__actions {
+.section__actions {
   display: flex;
   flex-wrap: wrap;
   margin-top: var(--spacing-small);
@@ -64,7 +64,7 @@
   }
 }
 
-.media__actions--between {
+.section__actions--between {
   justify-content: space-between;
 
   &:last-of-type:not(:only-of-type) {
@@ -72,7 +72,7 @@
   }
 }
 
-.media__actions--nowrap {
+.section__actions--nowrap {
   flex-wrap: nowrap;
 }
 
@@ -118,13 +118,6 @@
 .media__subtitle__channel {
   font-weight: 600;
   margin: var(--spacing-small) 0;
-}
-
-//  M E D I A
-//  I N F O
-
-.media__info {
-  word-wrap: break-word;
 }
 
 .media__info--large {

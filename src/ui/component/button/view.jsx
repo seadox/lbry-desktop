@@ -24,7 +24,6 @@ type Props = {
   button: ?string, // primary, secondary, alt, link
   iconSize?: number,
   iconColor?: string,
-  constrict: ?boolean, // to shorten the button and ellipsis, only use for links
   activeClass?: string,
   innerRef: ?any,
   // Events
@@ -59,7 +58,6 @@ const Button = forwardRef<any, {}>((props: Props, ref: any) => {
     button,
     iconSize,
     iconColor,
-    constrict,
     activeClass,
     emailVerified,
     requiresAuth,
@@ -80,7 +78,6 @@ const Button = forwardRef<any, {}>((props: Props, ref: any) => {
           'button--close': button === 'close',
           'button--disabled': disabled,
           'button--link': button === 'link',
-          'button--constrict': constrict,
         }
       : 'button--no-style',
     className

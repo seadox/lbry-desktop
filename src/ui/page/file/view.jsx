@@ -158,7 +158,7 @@ class FilePage extends React.Component<Props> {
             <h1 className="media__title media__title--large">{title}</h1>
 
             <div className="media__subtitle">
-              <div className="media__actions media__actions--between">
+              <div className="section__actions section__actions--between">
                 <DateTime uri={uri} show={DateTime.SHOW_DATE} />
                 <span>
                   {viewCount} {viewCount !== 1 ? __('Views') : __('View')}
@@ -166,7 +166,7 @@ class FilePage extends React.Component<Props> {
                 </span>
               </div>
 
-              <div className="media__actions media__actions--between">
+              <div className="section__actions section__actions--between">
                 <div className="media__action-group--large">
                   {claimIsMine && (
                     <Button
@@ -236,7 +236,7 @@ class FilePage extends React.Component<Props> {
             </div>
           </div>
           <div className="grid-area--related">
-            <div className="media__actions media__actions--between media__actions--nowrap">
+            <div className="section__actions section__actions--between section__actions--nowrap">
               <ClaimUri uri={uri} />
               <div className="file-properties">
                 {isRewardContent && <Icon size={20} iconColor="red" icon={icons.FEATURED} />}

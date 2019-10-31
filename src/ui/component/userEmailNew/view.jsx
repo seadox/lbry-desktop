@@ -65,7 +65,12 @@ function UserEmailNew(props: Props) {
             <I18nMessage
               tokens={{
                 terms: (
-                  <Button button="link" href="https://www.lbry.com/termsofservice" label={__('Terms of Service')} />
+                  <Button
+                    tabIndex="2"
+                    button="link"
+                    href="https://www.lbry.com/termsofservice"
+                    label={__('Terms of Service')}
+                  />
                 ),
               }}
             >

@@ -46,17 +46,12 @@
 .tag {
   @extend .badge;
   @extend .badge--tag;
-  // overflow: hidden;
-  // text-overflow: ellipsis;
-  // white-space: nowrap;
-  // text-transform: lowercase;
-  // max-width: 10rem;
-  // min-width: 0;
 }
 
 .tag--remove {
   max-width: 20rem;
   font-size: var(--font-body);
+  height: var(--height-input);
 }
 
 .tag--mature {

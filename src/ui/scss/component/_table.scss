@@ -1,45 +1,5 @@
-@import '~@lbry/components/sass/table/_index.scss';
-
-table,
-.table {
-  background-color: transparent;
-  margin: var(--spacing-small) 0;
-
-  th {
-    border-bottom: 2px solid var(--color-border);
-  }
-
-  th,
-  td {
-    padding-left: var(--spacing-large);
-  }
-
-  td {
-    overflow: hidden;
-  }
-
-  tr {
-    &:not(:last-of-type) {
-      td {
-        border-bottom: 1px solid var(--color-border);
-      }
-    }
-  }
-}
-
 .table__header {
   margin: var(--spacing-large);
-}
-
-.table__item--actionable {
-  span {
-    vertical-align: top;
-  }
-}
-
-.table__item-label {
-  font-size: var(--font-multiplier-small);
-  font-weight: 300;
 }
 
 .table--help {
