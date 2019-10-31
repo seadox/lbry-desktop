@@ -6,7 +6,7 @@ import * as MODALS from 'constants/modal_types';
 // @if TARGET='app'
 import { ipcRenderer } from 'electron';
 // @endif
-import { doOpenModal } from 'redux/actions/app';
+import { doOpenModal, doAnalyticsView } from 'redux/actions/app';
 import { push } from 'connected-react-router';
 import { setSubscriptionLatest, doUpdateUnreadSubscriptions } from 'redux/actions/subscriptions';
 import { makeSelectUnreadByChannel } from 'redux/selectors/subscriptions';
@@ -220,6 +220,7 @@ export function doPlayUri(uri: string, skipCostCheck: boolean = false, saveFileO
     }
 
     if (fileInfo && saveFile && (!fileInfo.download_path || !fileInfo.written_bytes)) {
+      dispatch(doAnalyticsView(uri)).then();
       beginGetFile();
       return;
     }
