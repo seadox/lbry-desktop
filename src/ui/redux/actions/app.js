@@ -21,7 +21,7 @@ import {
   doToast,
 } from 'lbry-redux';
 import Native from 'native';
-import { doFetchDaemonSettings } from 'redux/actions/settings';
+import { doFetchDaemonSettings, doSetAutoLaunch } from 'redux/actions/settings';
 import {
   selectIsUpgradeSkipped,
   selectUpdateUrl,
@@ -322,6 +322,7 @@ export function doDaemonReady() {
 
     // @if TARGET='app'
     dispatch(doBalanceSubscribe());
+    dispatch(doSetAutoLaunch());
     dispatch(doFetchDaemonSettings());
     dispatch(doFetchFileInfosAndPublishedClaims());
     if (!selectIsUpgradeSkipped(state)) {
